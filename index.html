@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator-panel">
+    <form class="calc-row" id="calculator-form" novalidate>
+      <div class="input-wrapper">
+        <input type="text" id="num1" placeholder="Число 1" autocomplete="off">
+        <div class="error-msg" id="err1"></div>
+      </div>
+
+      <div class="operator-wrapper">
+        <select id="operator" aria-label="Операция">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+      </div>
+
+      <div class="input-wrapper">
+        <input type="text" id="num2" placeholder="Число 2" autocomplete="off">
+        <div class="error-msg" id="err2"></div>
+      </div>
+
+      <div class="btn-wrapper">
+        <button type="submit" id="calc-btn">подсчитать</button>
+      </div>
+    </form>
+
+    <div class="result-box" id="result-box" aria-live="polite"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
